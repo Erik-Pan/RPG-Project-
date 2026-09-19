@@ -19,11 +19,14 @@ public class PlayerController : MonoBehaviour
     private const string Walking = "Is Walking";
     private const string LastHorizontal = "Last Horizontal", LastVertical = "Last Vertical";
 
+    public static bool playerCreated;
 
     void Start()
     {
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
+
+        playerCreated = true;
     }
 
     
